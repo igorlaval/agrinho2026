@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Agro Forte • Futuro Sustentável</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================
+       HUD DO JOGO
+  ========================================== -->
+  <header class="hud">
+
+    <div class="logo">
+      🌱 Agro Forte • Futuro Sustentável
+    </div>
+
+    <div class="hud-info">
+
+      <div class="info-card">
+        🌲 Madeira Coletada:
+        <span id="wood">0</span>
+      </div>
+
+      <div class="info-card">
+        ♻ Sustentabilidade:
+        <span id="eco">100</span>%
+      </div>
+
+      <div class="info-card">
+        ⛽ Energia:
+        <span id="fuel">100</span>%
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- =========================================
+       ÁREA DO JOGO
+  ========================================== -->
+  <main class="game-container">
+
+    <!-- FLORESTA -->
+    <section class="forest">
+
+      <!-- ÁRVORES -->
+      <div class="tree tree1"></div>
+      <div class="tree tree2"></div>
+      <div class="tree tree3"></div>
+      <div class="tree tree4"></div>
+      <div class="tree tree5"></div>
+      <div class="tree tree6"></div>
+
+      <!-- MADEIRAS -->
+      <div class="wood wood1"></div>
+      <div class="wood wood2"></div>
+      <div class="wood wood3"></div>
+
+      <!-- BASE -->
+      <div class="delivery-zone">
+        <span>BASE SUSTENTÁVEL</span>
+      </div>
+
+      <!-- CAMINHÃO -->
+      <div id="truck">
+
+        <div class="truck-body"></div>
+
+        <div class="truck-cabin"></div>
+
+        <div class="truck-load"></div>
+
+        <div class="wheel wheel1"></div>
+        <div class="wheel wheel2"></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================================
+       CONTROLES
+  ========================================== -->
+  <section class="controls">
+
+    <h2>Como Jogar</h2>
+
+    <p>
+      Use as setas do teclado para dirigir o caminhão.
+      Colete as madeiras da floresta e leve até a base sustentável.
+      Preserve o equilíbrio ambiental e mantenha a sustentabilidade alta.
+    </p>
+
+    <div class="keys">
+      ⬅ ➡ ⬆ ⬇
+    </div>
+
+  </section>
+
+  <!-- =========================================
+       MENSAGEM FINAL
+  ========================================== -->
+  <div id="message" class="hidden">
+    🌎 Missão Sustentável Concluída!
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
